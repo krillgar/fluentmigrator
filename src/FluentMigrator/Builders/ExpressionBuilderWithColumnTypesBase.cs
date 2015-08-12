@@ -87,6 +87,12 @@ namespace FluentMigrator.Builders
             Column.Type = DbType.DateTime;
             return (NextT)(object)this;
         }
+        
+        public NextT AsDateTime2()
+        {
+            Column.Type = DbType.DateTime2;
+            return (NextT)(object)this;
+        }
 
         public NextT AsDateTimeOffset()
         {
